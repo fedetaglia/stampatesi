@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: stampatesi_development
+  username: develop
+  password: develop
+
+test:
+  <<: *default
+  database: stampatesi_test
+  username: test
+  password: test
+
+production:
+  <<: *default
+  database: stampatesi_production

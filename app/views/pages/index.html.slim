@@ -1,0 +1,47 @@
+.row.steps
+  .step.col-md-3
+    = link_to step1_path do
+      .round 1
+      .content
+        i.fa.fa-book
+        p Seleziona Modello
+  .step.col-md-3
+    = link_to step2_path do
+      .round 2
+      .content
+        i.fa.fa-file-pdf-o
+        p Verifica PDF
+  .step.col-md-3
+    = link_to step3_path do
+      .round 3
+      .content
+        i.fa.fa-upload
+        p Upload File
+  .step.col-md-3
+    = link_to step4_path do
+      .round 4
+      .content
+        i.fa.fa-shopping-cart
+        p
+          | Ricevi a Casa
+          br
+          | Ritira in negozio
+
+.row.rett-container
+  .col-md-6.rett-ext
+    = link_to rilegature_path do
+      .rettangolo
+        | Rilegature
+  .col-md-6.rett-ext
+    = link_to copertine_path do
+      .rettangolo
+        | Copertine
+  .col-md-6.rett-ext
+    .rettangolo
+      = link_to formati_path do
+        | Formati
+  .col-md-6.rett-ext
+    .rettangolo
+      = link_to gallery_path do
+        | Tipologia Carta
+
